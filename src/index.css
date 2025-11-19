@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 150 30% 85%;
+    --foreground: 150 60% 15%;
+    --forest-dark: 150 45% 25%;
+    --forest-light: 150 25% 90%;
+
+    --card: 150 25% 88%;
+    --card-foreground: 150 60% 15%;
+
+    --popover: 35 15% 92%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 150 60% 15%;
+    --primary-foreground: 150 25% 90%;
+
+    --secondary: 150 20% 80%;
+    --secondary-foreground: 150 60% 15%;
+
+    --muted: 35 10% 85%;
+    --muted-foreground: 0 0% 35%;
+
+    --accent: 0 0% 8%;
+    --accent-foreground: 35 15% 92%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 15% 92%;
+
+    --border: 150 30% 40%;
+    --input: 150 30% 40%;
+    --ring: 0 0% 8%;
+
+    --radius: 0rem;
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 35 15% 92%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 35 15% 92%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 35 15% 92%;
+
+    --primary: 35 15% 92%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 35 15% 92%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 35 15% 92%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 35 15% 92%;
+
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 35 15% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground;
+    background: linear-gradient(to bottom, hsl(var(--forest-dark)), hsl(var(--forest-light)));
+    background-attachment: fixed;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}

@@ -19,7 +19,7 @@ const About = () => {
 
           <div>
             <p className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight mb-16">
-              Dedicated to crafting elegant solutions through clean code, thoughtful design, and a commitment to continuous learning.
+              Dedicated to crafting elegant solutions through thoughtful automation design and a commitment to continuous learning.
             </p>
 
             <div className="grid grid-cols-2 gap-8 md:gap-12">

@@ -12,7 +12,7 @@ const Contact = () => {
 
           <div>
             <p className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight mb-12">
-              Let's connect and create something meaningful together.
+              Let's connect! :)
             </p>
 
             <div className="space-y-6">
@@ -27,9 +27,6 @@ const Contact = () => {
                 </a>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity" aria-label="LinkedIn">
                   <Linkedin className="w-6 h-6" />
-                </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity" aria-label="Twitter">
-                  <Twitter className="w-6 h-6" />
                 </a>
               </div>
             </div>

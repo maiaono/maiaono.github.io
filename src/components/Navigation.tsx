@@ -16,7 +16,7 @@ const Navigation = () => {
             onClick={() => scrollToSection("hero")}
             className="text-lg font-bold tracking-tight hover:opacity-70 transition-opacity"
           >
-            Be kind: this is a work in progress
+            Maia Ono Hernandez
           </button>
 
           <div className="flex items-center gap-8 md:gap-12">
